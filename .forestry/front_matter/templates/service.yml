@@ -64,4 +64,5 @@ fields:
     labelField: 
   label: Steps
 pages:
+- _services/logistics.md
 - _services/freight.md

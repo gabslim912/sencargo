@@ -13,6 +13,7 @@ fields:
     maxSize: 250
   label: Image
 pages:
+- _partners/dhl.md
 - _partners/tnt.md
 - _partners/amtrak.md
 - _partners/usps.md

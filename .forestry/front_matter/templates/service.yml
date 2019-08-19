@@ -1,4 +1,51 @@
 ---
 label: service
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: main_image
+  type: file
+  config:
+    maxSize: 250
+  label: Main image
+- name: number_of_shipments
+  type: number
+  label: Number of shipments
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: steps
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Steps

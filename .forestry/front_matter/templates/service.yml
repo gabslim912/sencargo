@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Title
+- name: filter
+  type: text
+  config:
+    required: false
+  label: Filter
 - name: main_image
   type: file
   config:

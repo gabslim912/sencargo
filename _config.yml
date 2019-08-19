@@ -25,6 +25,9 @@ collections:
   partners:
     title: partners
     output: true
+  services:
+    title: services
+    output: true
 title: SENCARGO USA SENEGAL 
 email: ship@sencargo.com
 tel: 866-414-SHIP (7447)

@@ -4,7 +4,8 @@ filter: logistics
 main_image: "/uploads/transport_logistics.jpg"
 number_of_shipments: 1000
 steps:
-- title: First Step
+- title: First step
+  number: 1
   image: "/uploads/step_dummy.jpg"
   description: Lorem Khaled Ipsum is a major key to success. Eliptical talk. You should
     never complain, complaining is a weak emotion, you got life, we breathing, we
@@ -13,7 +14,8 @@ steps:
     life is beautiful, life is what you make it. Stay focused. Let me be clear, you
     have to make it through the jungle to make it to paradise, that’s the key, Lion!
     The other day the grass was brown, now it’s green because I ain’t give up.
-- title: Second Step
+- title: Second step
+  number: 2
   image: "/uploads/step_dummy.jpg"
   description: Lorem Khaled Ipsum is a major key to success. Eliptical talk. You should
     never complain, complaining is a weak emotion, you got life, we breathing, we
@@ -22,7 +24,8 @@ steps:
     life is beautiful, life is what you make it. Stay focused. Let me be clear, you
     have to make it through the jungle to make it to paradise, that’s the key, Lion!
     The other day the grass was brown, now it’s green because I ain’t give up.
-- title: Third Step
+- title: Third step
+  number: 3
   image: "/uploads/step_dummy.jpg"
   description: Lorem Khaled Ipsum is a major key to success. Eliptical talk. You should
     never complain, complaining is a weak emotion, you got life, we breathing, we

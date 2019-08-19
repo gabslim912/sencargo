@@ -13,6 +13,7 @@ fields:
     maxSize: 250
   label: Image
 pages:
+- _partners/maersk.md
 - _partners/fedex.md
 - _partners/ups.md
 - _partners/dhl.md

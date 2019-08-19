@@ -1,5 +1,5 @@
 ---
 title: DHL
-image: "/uploads/dhl.jpg"
+image: "/uploads/dhl.png"
 
 ---

@@ -98,28 +98,23 @@
                         <li>
                             <a href="#">services</a>
                             <ul class="vk-navbar-nav child">
+                                {% for service in site.services %}
+                                <li><a href="{{ service.url }}">{{ service.title }}</a></li>
 
-                                <li><a href="3.1-consultant-service.html">Consultant</a></li>
-
-                                <li><a href="3.2-design-service.html">design</a></li>
-
-                                <li><a href="3.3-construction-service.html">construction</a></li>
-
-                                <li><a href="3.4-furniture-service.html">furniture</a></li>
-
+                                {% endfor %}
                             </ul>
                         </li>
                         <li>
                             <a href="#">customer links</a>
                             <ul class="vk-navbar-nav child">
 
-                                <li><a href="3.1-consultant-service.html">Consultant</a></li>
+                                <li><a href="#">Link 1</a></li>
 
-                                <li><a href="3.2-design-service.html">design</a></li>
+                                <li><a href="#">Link 2</a></li>
 
-                                <li><a href="3.3-construction-service.html">construction</a></li>
+                                <li><a href="#">Link 3</a></li>
 
-                                <li><a href="3.4-furniture-service.html">furniture</a></li>
+                                <li><a href="#">Link 4</a></li>
 
                             </ul>
                         </li>

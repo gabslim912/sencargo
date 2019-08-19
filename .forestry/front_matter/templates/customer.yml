@@ -27,5 +27,6 @@ fields:
     maxSize: 250
   label: image
 pages:
+- _customers/katy-p.md
 - _customers/michel-s.md
 - _customers/georges-d.md

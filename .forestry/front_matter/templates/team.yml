@@ -18,4 +18,5 @@ fields:
     maxSize: 250
   label: Image
 pages:
+- _teams/boubacar-diop.md
 - _teams/fatou-diallo.md

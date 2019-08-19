@@ -54,3 +54,5 @@ fields:
     max: 
     labelField: 
   label: Steps
+pages:
+- _services/freight.md

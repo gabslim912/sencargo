@@ -2,11 +2,11 @@
 label: team
 hide_body: true
 fields:
-- name: name
+- name: title
   type: text
   config:
     required: false
-  label: Name
+  label: Title
 - name: job_position
   type: text
   config:

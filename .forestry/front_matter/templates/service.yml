@@ -36,6 +36,11 @@ fields:
       required: false
     label: title
     default: Step
+  - name: number
+    type: text
+    config:
+      required: false
+    label: Number
   - name: image
     type: file
     config:
@@ -64,5 +69,5 @@ fields:
     labelField: 
   label: Steps
 pages:
-- _services/logistics.md
 - _services/freight.md
+- _services/logistics.md

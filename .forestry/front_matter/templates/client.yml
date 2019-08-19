@@ -13,6 +13,7 @@ fields:
     maxSize: 250
   label: Image
 pages:
+- _partners/amazon.md
 - _partners/ebay.md
 - _partners/maersk.md
 - _partners/fedex.md

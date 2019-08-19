@@ -18,6 +18,7 @@ fields:
     maxSize: 250
   label: Image
 pages:
+- _teams/saly-diop.md
 - _teams/michael-sarr.md
 - _teams/clara-smith.md
 - _teams/boubacar-diop.md

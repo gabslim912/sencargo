@@ -579,42 +579,12 @@ layout: default
                             </h2>
 
                             <ul class="vk-list vk-list-client-style-1">
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img1.png" alt="">
+                                {% for partner in site.partners%}
+                                <li class="vk-img-frame" style="width: 185px; height: 100px;">
+                                    <img src="{{ partner.image }}" alt="">
                                 </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img2.png" alt="">
-                                </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img3.png" alt="">
-                                </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img4.png" alt="">
-                                </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img5.png" alt="">
-                                </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img6.png" alt="">
-                                </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img7.png" alt="">
-                                </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img8.png" alt="">
-                                </li>
-
-                                <li class="vk-img-frame">
-                                    <img src="images/about/img9.png" alt="">
-                                </li>
+                                {% endfor %}
+                                
 
                             </ul>
                             <!--./vk-list-client-style-1-->

@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 collections:
   posts:
     title: Posts
@@ -21,6 +22,9 @@ collections:
     title: produits
     output: true
     layout: produit
+  partners:
+    title: partners
+    output: true
 title: SENCARGO USA SENEGAL 
 email: ship@sencargo.com
 tel: 866-414-SHIP (7447)

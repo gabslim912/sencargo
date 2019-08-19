@@ -807,7 +807,7 @@ a {
     width: 100%; }
     @media (min-width: 992px) {
       .vk-banner .page-heading {
-        position: absolute;
+        
         font-size: 44px;
         top: auto;
         letter-spacing: 7px;

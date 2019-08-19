@@ -1,0 +1,154 @@
+---
+layout: default
+---
+<section class="vk-content">
+
+       {% include breadcrumbs.html %}
+        <!--./vk-breadcrumb-->
+        <div class="vk-page vk-page-about">
+
+            <div class="vk-who-we-are vk-section vk-section-style-1">
+                <div class="container">
+                    <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+            <span>
+                <span class="vk-text-color-yellow-1">who</span> we are
+            </span>
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-6 left-content">
+                            <div class="vk-img-frame">
+                                <img src="/uploads/transport_logistics.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <!--./left-->
+
+                        <div class="col-md-6 right-content">
+                            <div class="content">
+                                <h4 class="text-uppercase vk-title">construction company</h4>
+                                <p>Lorem Khaled Ipsum is a major key to success. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Let’s see what Chef Dee.</p>
+                                <p>Wraith talk. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. In life there will be road blocks but we will over come it. Cloth talk. The ladies always say Khaled you smell good, I use no cologne.</p>
+                            </div>
+                            <div class="vk-buttons">
+                                <a href='#' class="vk-btn vk-btn-default vk-btn-icon text-uppercase">
+                                    <span class="title"><i class="fa fa-file-pdf-o"></i>download information brochure</span>
+                                    <span class="icon"><i class="fa fa-download"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--./right-->
+                    </div>
+                    <!--./row-->
+                </div>
+                <!--./container-->
+            </div>
+            <!--./vk-who-we-are-->
+
+            <div class="vk-our-team">
+                <div class="container">
+                    <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+                    <span>
+                        <span class="vk-text-color-yellow-1">our</span>
+                        <span style="color: #2e3841;"> Team</span>
+                    </span>
+                    </h2>
+                    <div class="row">
+
+                        <div class="vk-slider vk-slick-slider vk-our-team-slider vk-slider-arrow-top" data-slick='{"slidesToShow": 4}'>
+                            {% for team in site.teams %}
+                            <div class="item col-md-3">
+                                <div class="vk-img-frame">
+                                    <a href="{{ team.image }}" class="vk-img" data-lightbox="image-slide-0">
+                                        <img src="{{ team.image }}" alt="{{ team.title }}">
+                                    </a>
+                                </div>
+                                <ul class="content">
+                                    <li class="title">{{ team.title }}</li>
+                                    <li class="position">{{ team.job_position }}</li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <!--./vk-slider-->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!--./vk-our-team-->
+
+            <div class="vk-content-bot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 left-content">
+                            <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+                        <span>
+                            <span class="vk-text-color-yellow-1">customer</span>
+                            say
+                        </span>
+                            </h2>
+
+                            <div class="row">
+                                <div class="vk-testimonial-list vk-slider-arrow-top customer-slider">
+                                    {% for customer in site.customers %}
+                                    <div class="col-md-6 item">
+                                        <div class="vk-testimonial">
+                                            <div class="avatar">
+                                                <div class="vk-img-frame">
+                                                    <a href="#" class="vk-img">
+                                                        <img src="{{ customer.image }}" alt="{{ customer.title }}">
+                                                    </a>
+                                                </div>
+                                                <div class="profile">
+                                                    <span class="name">{{ customer.title }}</span>
+                                                    <span class="position">{{ customer.job_position }}</span>
+                                                </div>
+                                            </div>
+                                            <!--./avatar-->
+
+                                            <div class="content">
+                                                <i class="fa fa-quote-left"></i>
+                                                <p class="vk-text">{{ customer.testimonial }}</p>
+                                            </div>
+                                            <!-- ./content-->
+                                        </div>
+                                        <!--./testimonial-->
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <!--./vk-testimonial-list-->
+                            </div>
+                            <!--./row-->
+                        </div>
+                        <!--./col-md-6-->
+
+                        <div class="col-md-6 right-content">
+                            <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+                        <span>
+                            <span class="vk-text-color-yellow-1">our</span>
+                            partners
+                        </span>
+
+                            </h2>
+
+                            <ul class="vk-list vk-list-client-style-1">
+                                {% for partner in site.partners%}
+                                <li class="vk-img-frame" style="width: 185px; height: 120px;">
+                                    <img src="{{ partner.image }}" alt="">
+                                </li>
+                                {% endfor %}
+                                
+
+                            </ul>
+                            <!--./vk-list-client-style-1-->
+                        </div>
+                        <!--./col-md-6-->
+                    </div>
+                    <!--./row-->
+                </div>
+            </div>
+            <!--./vk-content-bot-->
+        </div>
+        <!--./vk-page-->
+
+    </section>
+    <!--./content-->

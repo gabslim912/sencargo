@@ -1,6 +1,6 @@
 ---
-layout: default
-title: A propos
-permalink: "/a_propos/"
+layout: about
+title: About Us
+permalink: "/about/"
 
 ---

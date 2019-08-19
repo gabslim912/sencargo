@@ -1,11 +1,14 @@
 ---
 title: Freight
 filter: first
+layout: service
 main_image: "/uploads/freight.jpg"
 number_of_shipments: 500
 steps:
 - title: First step
   number: 1
+  position: left-step
+  second_position: right-step
   image: "/uploads/step_dummy.jpg"
   description: Lorem Khaled Ipsum is a major key to success. Eliptical talk. You should
     never complain, complaining is a weak emotion, you got life, we breathing, we
@@ -16,6 +19,8 @@ steps:
     The other day the grass was brown, now it’s green because I ain’t give up.
 - title: Second step
   number: 2
+  position: left-step
+  second_position: right-step
   image: "/uploads/step_dummy.jpg"
   description: Lorem Khaled Ipsum is a major key to success. Eliptical talk. You should
     never complain, complaining is a weak emotion, you got life, we breathing, we
@@ -26,6 +31,8 @@ steps:
     The other day the grass was brown, now it’s green because I ain’t give up.
 - title: Third step
   number: 3
+  position: left-step
+  second_position: right-step
   image: "/uploads/step_dummy.jpg"
   description: Lorem Khaled Ipsum is a major key to success. Eliptical talk. You should
     never complain, complaining is a weak emotion, you got life, we breathing, we

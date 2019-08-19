@@ -1,0 +1,193 @@
+---
+layout: default
+---
+<section class="vk-content">
+
+        <!--{% include breadcrumbs.html %}
+        ./vk-breadcrumb-->
+        <div class="vk-page vk-page-service vk-page-design-service">
+
+            <div class="vk-design vk-section vk-section-style-2">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6 left-content">
+                            <div class="vk-img-frame">
+                                <img src="{{ page.main_image }}" alt="{{ page.title }}"/>
+                            </div>
+                        </div>
+                        <!--./left-->
+
+                        <div class="col-md-6 right-content">
+                            <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+                    <span>
+                     <span class="vk-text-color-yellow-1">{{ page.title }}</span>
+                    </span>
+                            </h2>
+                            <div class="content">
+                                <p>{{ page.content }}</p>
+                            </div>
+                            <div class="vk-buttons">
+                                <div class="vk-counter vk-counter-non-icon">
+                                    <ul class="content">
+                                        <li class="number-count" data-to="{{ page.number_of_shipments }}">{{ page.number_of_shipments }}</li>
+                                        <li class="title text-uppercase">Delivery to date</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--./right-->
+                    </div>
+                    <!--./row-->
+                </div>
+                <!--./container-->
+            </div>
+            <!--./vk-design-->
+
+            <div class="vk-work-process">
+                <div class="container">
+                    <h2 class="vk-heading vk-heading-border vk-heading-border-right vk-text-right">
+                    <span>
+                        <span class="vk-text-color-yellow-1">work</span>
+                        process
+                    </span>
+                    </h2>
+
+                    <div class="vk-list-step">
+                        {% for step in page.steps %}
+                        <div class="row item-row" aria-label='{{ step.number }}'>
+                            <div class="col-md-6 {{ step.position }}">
+                                <div class="vk-img-frame">
+                                    <img src="{{ step.image }}" alt="{{ step.title }}">
+                                </div>
+                            </div>
+                            <!--./left-->
+                            <div class="col-md-6 {{ step.second_position }}">
+                                <h4 class="vk-title text-uppercase">{{ step.title }}</h4>
+                                <p>{{ step.description }}</p>
+                            </div>
+                            <!--./right-->
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                    <!--./vk-list-step-->
+                </div>
+                <!--./container-->
+            </div>
+            <!--./vk-work-process-->
+
+            <div class="vk-section vk-pricing-table-section vk-pricing-table">
+                <div class="container">
+                    <h2 class="vk-heading vk-heading-border vk-heading-border-left">
+                     <span>
+                        <span class="vk-text-color-yellow-1">Pricing</span>
+                        table
+                    </span>
+                    </h2>
+
+                    <div class="pricing pricing-1">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+                                <!-- PRICE ITEM -->
+                                <div class="panel price panel-basic">
+                                    <div class="vk-panel vk-panel-basic vk-overlay">
+                                        <div class="vk-be-overlay">
+                                            <div class="panel-heading  text-center ">
+                                                <h3 class="vk-text-uppercase">basic</h3></div>
+                                            <div class="panel-body text-center">
+                                                <p class="lead vk-price"><span>$</span>
+                                                    <big>79<span class="price-small">99</span></big>
+                                                    <small>/ month</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group list-group-flush text-center">
+                                        <li class="list-group-item"> 1 ...........</li>
+                                        <li class="list-group-item"> 25 ...........</li>
+                                        <li class="list-group-item"> 345 ...........</li>
+                                        <li class="list-group-item"> unlimited ...........</li>
+                                        <li class="list-group-item"> Unlimited ...........</li>
+                                        <li class="list-group-item"> 24hrs support ...........</li>
+                                    </ul>
+                                    <div class="panel-footer">
+                                        <a href="#" class="vk-btn vk-btn-default vk-btn-m text-uppercase">
+                                            <span class="title">Subscribe now</span> </a>
+                                    </div>
+                                </div>
+                                <!-- /PRICE ITEM -->
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+                                <!-- PRICE ITEM -->
+                                <div class="panel price panel-standard">
+                                    <div class="vk-panel vk-panel-standard vk-overlay">
+                                        <div class="vk-be-overlay">
+                                            <div class="panel-heading arrow_box text-center ">
+                                                <h3 class="vk-text-uppercase">standard</h3></div>
+                                            <div class="panel-body text-center">
+                                                <p class="lead vk-price"><span>$</span>
+                                                    <big>119<span class="price-small">99</span></big>
+                                                    <small>/ month</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group list-group-flush text-center">
+                                        <li class="list-group-item"> 1 .........</li>
+                                        <li class="list-group-item"> 25 .........</li>
+                                        <li class="list-group-item"> 345 .........</li>
+                                        <li class="list-group-item"> unlimited .........</li>
+                                        <li class="list-group-item"> Unlimited .........</li>
+                                        <li class="list-group-item"> 24hrs support .........</li>
+                                    </ul>
+                                    <div class="panel-footer">
+                                        <a href="#" class="vk-btn vk-btn-default vk-btn-m text-uppercase">
+                                            <span class="title">Subscribe now</span> </a>
+                                    </div>
+                                </div>
+                                <!-- /PRICE ITEM -->
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+                                <!-- PRICE ITEM -->
+                                <div class="panel price panel-professional">
+                                    <div class="vk-panel vk-panel-professional vk-overlay">
+                                        <div class="vk-be-overlay">
+                                            <div class="panel-heading arrow_box text-center ">
+                                                <h3 class="vk-text-uppercase">vip</h3></div>
+                                            <div class="panel-body text-center">
+                                                <p class="lead vk-price"><span>$</span>
+                                                    <big>159<span class="price-small">99</span></big>
+                                                    <small>/ month</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group list-group-flush text-center">
+                                        <li class="list-group-item"> 1 ..........</li>
+                                        <li class="list-group-item"> 25 ..........</li>
+                                        <li class="list-group-item"> 345 ..........</li>
+                                        <li class="list-group-item"> unlimited .........</li>
+                                        <li class="list-group-item"> Unlimited .........</li>
+                                        <li class="list-group-item"> 24hrs support</li>
+                                    </ul>
+                                    <div class="panel-footer">
+                                        <a href="#" class="vk-btn vk-btn-default vk-btn-m text-uppercase">
+                                            <span class="title">Subscribe now</span> </a>
+                                    </div>
+                                </div>
+                                <!-- /PRICE ITEM -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--./pricing pricing-1-->
+                </div>
+                <!--./container-->
+            </div>
+            <!--./vk-pricing-table-section-->
+        </div>
+        <!--./vk-page-->
+
+    </section>
+    <!--./content-->
